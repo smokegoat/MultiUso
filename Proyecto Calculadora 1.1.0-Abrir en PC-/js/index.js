@@ -31,14 +31,17 @@ function magiaoff() {
     document.getElementById("instrucciones").classList.add("invisible");
         });
       }
-function raizCuadrada(){
-    let indice = document.getElementById("indice").value;
-    let subR = document.getElementById("subR").value;
-    let resultado = Math.sqrt(indice,subR);
-    document.getElementById("resultadoRCuadrada").innerHTML =`<p class="titulo resultitulo" id="resultado">${resultado}</p>`;}
+    function raizCuadrada() {
+    let subR = document.getElementById("subR").value
+    let respuesta = Math.sqrt(subR);
+    document.getElementById("resultadoRaiz").innerHTML = `<p class="titulo resultitulo" id="resultado">${respuesta}</p>`;
+    }
+
+
 window.onload = function(){
     document.getElementById("sacarResultado").addEventListener("click",sacarRespuesta);
-    document.getElementById("botonRaiz").addEventListener("click",raizCuadrada);
+    document.getElementById("sacarRaiz").addEventListener("click", raizCuadrada);
     magiaon();
     magiaoff();
+
       }
