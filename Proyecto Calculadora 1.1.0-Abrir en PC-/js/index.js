@@ -20,17 +20,25 @@ function sacarRespuesta(){
           document.getElementById("resultado").innerHTML = `<p class="titulo resultitulo" id="resultado">${respuesta}</p>`;}
       }
 function magiaon() {
-    document.getElementById("botonInstruccionesBasicas").addEventListener("dblclick", () => {
     document.getElementById("instrucciones").classList.remove("invisible");
     document.getElementById("instrucciones").classList.add("viible");
-        });
+
       }
 function magiaoff() {
-    document.getElementById("botonInstruccionesBasicas").addEventListener("click", () => {
     document.getElementById("instrucciones").classList.remove("visible");
     document.getElementById("instrucciones").classList.add("invisible");
-        });
       }
+      
+function magiaon2() {
+    document.getElementById("instrucciones2").classList.remove("invisible");
+    document.getElementById("instrucciones2").classList.add("viible");
+
+      }
+function magiaoff2() {
+    document.getElementById("instrucciones2").classList.remove("visible");
+    document.getElementById("instrucciones2").classList.add("invisible");
+      }
+
     function raizCuadrada() {
     let subR = document.getElementById("subR").value
     let respuesta = Math.sqrt(subR);
@@ -41,7 +49,10 @@ function magiaoff() {
 window.onload = function(){
     document.getElementById("sacarResultado").addEventListener("click",sacarRespuesta);
     document.getElementById("sacarRaiz").addEventListener("click", raizCuadrada);
-    magiaon();
-    magiaoff();
 
-      }
+    document.getElementById("botonInstruccionesBasicas").addEventListener("dblclick",magiaon);
+    document.getElementById("botonInstruccionesBasicas").addEventListener("click",magiaoff);
+
+    document.getElementById("InstruccionesRaiz").addEventListener("dblclick",magiaon2);
+    document.getElementById("InstruccionesRaiz").addEventListener("click",magiaoff2);
+  }
