@@ -49,10 +49,9 @@ function magiaoff2() {
 window.onload = function(){
     document.getElementById("sacarResultado").addEventListener("click",sacarRespuesta);
     document.getElementById("sacarRaiz").addEventListener("click", raizCuadrada);
-
     document.getElementById("botonInstruccionesBasicas").addEventListener("dblclick",magiaon);
     document.getElementById("botonInstruccionesBasicas").addEventListener("click",magiaoff);
-
     document.getElementById("InstruccionesRaiz").addEventListener("dblclick",magiaon2);
     document.getElementById("InstruccionesRaiz").addEventListener("click",magiaoff2);
+    
   }

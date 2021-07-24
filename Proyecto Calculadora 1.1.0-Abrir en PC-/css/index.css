@@ -92,7 +92,8 @@
 .resultitulo{
     display: inline-block;
     margin-top: 5px;
-    width: 100px;
+    width: auto;
+    min-width: 100px;
     text-align: center;
     border-radius: 10px;
     padding: 10px;
