@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <!-------->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="js/index.js"></script>
+    <title>Caluladora</title>
+    <link rel="icon" href="icon/icons8-calculadora-24.png">
+</head>
+<body style="background-color: black;">
+        <!-- Calculadora Basica -->
+        <div class="contenido_centro">
+            <h1 class="contenido_centro-titulo titulo">CALCULADORA BASICA</h1>
+            <form class="contenido_centro-form" id="contendo_centro-form" >
+                <div class="conten">
+                    <label for="input1" class="titulo">N°1:</label>
+                    <input type="number" class="input" id="input1" value="0">
+                </div>
+                <select class="select" id="select">
+                    <option value="SUMAR">SUMAR</option>
+                    <option value="RESTAR">RESTAR</option>
+                    <option value="MULTIPLICAR">MULTIPLICAR</option>
+                    <option value="DIVIDIR">DIVIDIR</option>
+                </select>
+                <div class="conten">
+                    <label for="input2" class="titulo labelBlock" > N°2:</label>
+                    <input type="number" class="input" id="input2" value="0">
+                </div>
+                 <button type="button" class="sacarResultado" id="sacarResultado" >Resultado</button>
+                <div id=resultado></div>
+            </form>
+            <button class="botonMagico " id="botonInstruccionesBasicas" value="Instrucciones" >?</button>
+        </div>
+                <!-- instrucciones -->
+        <div class="contenido_Instrucciones invisible " id="instrucciones">
+            <h1 class="titulo">Instrucciones: </h1>
+            <h3 class="titul2">Usando los espacios en blanco "N°1" y "N°2" podras usar SOLO numeros.</h3>
+            <h3 class="titul2">Si aprietas el Selector que esta pocisionado en medio de los "N°1" y "N°2" podras enontrarte con la opcion Suma, Resta, Multiplicacion y Division. </h3>
+            <h3 class="titul2">Si colocas un numero en los "N°1" y "N°2" y selecionas unas de las 4 funciones que ofrecemos podras sacar el Resultado usando el Boton Verde que dice Resultado</h3>
+        </div>
+        <!------------------->
+        <div class="contenido_centro">
+            <h1 class="contenido_centro-titulo titulo">CALCULADORA AVANZADA</h1>
+            <form class="contenido_centro-form">
+                <p class="titul2">Raiz Cuadrada</p>
+                <div class="conten">
+                    <label for="indice" class="titulo">INDICE</label>
+                    <input type="number" class="input" id="indice" value="0">
+                </div>
+                <div class=" titul3">
+                √
+                </div>
+                <div class="conten">
+                    <label for="subR" class="titulo">SUBRADICAL</label>
+                    <input type="number" class="input" id="subR" value="0">
+                </div>
+                <button type="button" class="sacarResultado" id="sacarRaiz" >Resultado</button>
+            </form>
+            <button class="botonMagico " id="" value="Instrucciones" >?</button>
+        </div>
+
+        <!-- Fin -->
+</body>
+</html>
