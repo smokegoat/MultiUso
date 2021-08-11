@@ -1,4 +1,4 @@
-Mi calculadora
+Mi calculadora Eperimntos para la oficial
 En proceso por Renato Campos 
 Se puede usar en cualquier Navegador Web
 Grasias por usar
