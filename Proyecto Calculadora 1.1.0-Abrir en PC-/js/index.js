@@ -57,6 +57,14 @@ function magiaoff3() {
   document.getElementById("instrucciones3").classList.remove("visible");
   document.getElementById("instrucciones3").classList.add("invisible");
 }
+function reloj() {
+  let momentoActual = new Date();
+  let hora = momentoActual.getHours();
+  let minuto = momentoActual.getMinutes();
+  let horaImprimible = hora + ":" + minuto;
+  document.getElementById("reloj").value = horaImprimible;
+  setTimeout("reloj()", 1000);
+}
 window.onload = function(){
     document.getElementById("sacarResultado").addEventListener("click",sacarRespuesta);
     document.getElementById("sacarRaiz").addEventListener("click", raizCuadrada);
@@ -70,4 +78,5 @@ window.onload = function(){
 
     document.getElementById("Ins.potencia").addEventListener("click",magiaon3)
     document.getElementById("Ins.potencia").addEventListener("dblclick",magiaoff3);
+    reloj();
   }
