@@ -130,3 +130,15 @@ p{
     margin: 10px;
     width: 500px;
 }
+.contenido_centro_reloj{
+    display: block;
+    width: auto;
+    max-width: 70px;
+    padding: 10px;
+    background-color:#8C52FF ;
+    border: 6px solid #6038AF;
+    box-shadow: 6px 8px 0px #3D1A59;
+    margin-top: 20px;
+    border-radius: 5px;
+    
+}
