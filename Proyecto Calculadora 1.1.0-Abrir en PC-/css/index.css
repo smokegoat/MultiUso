@@ -1,3 +1,13 @@
+body{
+    background-color: #000;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #3D1A59;
+    border-radius: 100px;
+}
 .contenido_centro{
     display: block;
     width: auto;
