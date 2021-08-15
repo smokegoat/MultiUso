@@ -142,3 +142,15 @@ p{
     border-radius: 5px;
     
 }
+.reloj{
+    display: inline-block;
+    width: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Kiwi Maru', serif;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+}
