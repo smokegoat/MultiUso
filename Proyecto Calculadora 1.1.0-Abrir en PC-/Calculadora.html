@@ -8,10 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-    <!-------->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <script src="js/index.js"></script>
     <title>Caluladora</title>
     <link rel="icon" href="icon/icons8-calculadora-24.png">
 </head>
@@ -89,8 +87,39 @@
                     <h1 class="titulo">Instrucciones:</h1>
                     <img src="icon/descargar.png" class="img">
                 </div>
-            </div>
-            <!-- Fin -->
-            </div>
+                <div class="contenido_centro-form">
+                    <p class="titul2">Porcentaje</p>
+                <div class="conten ">
+                    <label for="cantidad" class="titulo">Cantidad:</label> 
+                    <input type="text" id="cantidad" class="input" onKeyPress="return onKeyPressBlockChars(event,this.value);" onKeyUp="calculaPorcentajes(this.value)">
+                </div><br>
+                <div class="conten block">
+                <p class="titul2">60%:</p>
+                <input type="text" class="input2" name="porcent60" id="porcent60"readonly>
+                </div>
+                <div class="conten block">
+                <p class="titul2">50%:</p>
+                <input type="text" class="input2" name="porcent50" id="porcent50"readonly>
+                </div>
+                <div class="conten block">
+                <p class="titul2">30%:</p>
+                <input type="text" class="input2" name="porcent30" id="porcent30"readonly>
+                </div>
+                <div class="conten block">
+                    <p class="titul2">25%</p>
+                <input type="text" class="input2" name="porcent25" id="porcent25"readonly>
+                </div>
+                <div class="conten block">
+                <p class="titul2">15%:</p>
+                <input type="text" class="input2" name="porcent15" id="porcent15"readonly>
+                </div>
+                <div class="conten block">
+                <p class="titul2">5%:</p>
+                <input type="text" class="input2" name="porcent5" id="porcent5" readonly></div>
+                </div>
+                <button class="botonMagico " id="" value="Instrucciones" >?</button>
+
 </body>
+    <script src="js/index.js"></script>
+
 </html>

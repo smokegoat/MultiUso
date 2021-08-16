@@ -30,20 +30,17 @@ function potencia() {
   let resultado = Math.pow(base, potencia)
   document.getElementById("resultdopotencia").innerHTML =`<p class="titulo resultitulo" id="resultado">${resultado}</p>`;
 }
-
 function magiaon() {
     document.getElementById("instrucciones").classList.remove("invisible");
-    document.getElementById("instrucciones").classList.add("viible");
-
+    document.getElementById("instrucciones").classList.add("visible");
       }
 function magiaoff() {
     document.getElementById("instrucciones").classList.remove("visible");
     document.getElementById("instrucciones").classList.add("invisible");
       }
-      
 function magiaon2() {
     document.getElementById("instrucciones2").classList.remove("invisible");
-    document.getElementById("instrucciones2").classList.add("viible");
+    document.getElementById("instrucciones2").classList.add("visible");
 }
 function magiaoff2() {
   document.getElementById("instrucciones2").classList.remove("visible");
@@ -51,7 +48,7 @@ function magiaoff2() {
 }
 function magiaon3() {
   document.getElementById("instrucciones3").classList.remove("invisible");
-  document.getElementById("instrucciones3").classList.add("viible");
+  document.getElementById("instrucciones3").classList.add("visible");
 }
 function magiaoff3() {
   document.getElementById("instrucciones3").classList.remove("visible");
@@ -65,18 +62,33 @@ function reloj() {
   document.getElementById("reloj").value = horaImprimible;
   setTimeout("reloj()", 1000);
 }
-window.onload = function(){
+  function onKeyPressBlockChars(e, numero) {
+    var key = window.event ? e.keyCode : e.which;
+    var keychar = String.fromCharCode(key);
+    reg = /\d|\./;
+    if (numero.indexOf(".") != -1 && keychar == ".") {
+      return false;
+    } else {
+      return reg.test(keychar);
+    }
+  }
+  function calculaPorcentajes(numero) {
+    
+    document.getElementById("porcent60").value = Math.floor(numero * 60) / 100;
+    document.getElementById("porcent50").value = Math.floor(numero * 50) / 100;
+    document.getElementById("porcent30").value = Math.floor(numero * 30) / 100;
+    document.getElementById("porcent25").value = Math.floor(numero * 25) / 100;
+    document.getElementById("porcent15").value = Math.floor(numero * 15) / 100;
+    document.getElementById("porcent5").value = Math.floor(numero * 5) / 100;
+
+  }
     document.getElementById("sacarResultado").addEventListener("click",sacarRespuesta);
     document.getElementById("sacarRaiz").addEventListener("click", raizCuadrada);
     document.getElementById("sacarPotencia").addEventListener("click",potencia);
-    
     document.getElementById("botonInstruccionesBasicas").addEventListener("dblclick",magiaon);
     document.getElementById("botonInstruccionesBasicas").addEventListener("click",magiaoff);
-
     document.getElementById("InstruccionesRaiz").addEventListener("dblclick",magiaon2);
     document.getElementById("InstruccionesRaiz").addEventListener("click",magiaoff2);
-
-    document.getElementById("Ins.potencia").addEventListener("click",magiaon3)
-    document.getElementById("Ins.potencia").addEventListener("dblclick",magiaoff3);
-    reloj();
-  }
+    document.getElementById("Ins.potencia").addEventListener("dblclick",magiaon3)
+    document.getElementById("Ins.potencia").addEventListener("click",magiaoff3);
+    reloj(); 

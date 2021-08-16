@@ -44,12 +44,12 @@ body::-webkit-scrollbar-thumb{
 .titulo{
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 2px;
-    font-size: 22px;
+    font-size: 20px;
 }
 .titul2{
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 22px;
 }
 .titul3{
     font-family: 'Barlow Condensed', sans-serif;
@@ -85,14 +85,31 @@ body::-webkit-scrollbar-thumb{
     padding-left: 15px;
     padding-bottom: 5px;
     border: none;
-    border-bottom: 5px solid rgb(0, 255, 128);
+    border-bottom: 5px solid rgb(229, 255, 0);
     margin: 5px;
     font-size: 20px;
     font-family: 'Kiwi Maru', serif;
     background-color: transparent;
-    outline: hidden;
-    color: rgb(229, 226, 226);
+    outline: none;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
     }
+.input2{
+    width:auto;
+    max-width: 300px;
+    height: 20px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 5px solid rgb(229, 255, 0);
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Kiwi Maru', serif;
+    background-color: transparent;
+    outline: none;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
 .select{
     width: auto;
     max-width: 110px;
@@ -130,6 +147,10 @@ body::-webkit-scrollbar-thumb{
     padding: 4px;
     border-radius: 20px;
     background-color:#6038AF ;
+    margin: 5px;
+}
+.block{
+    display: block;
 }
 .invisible{
     display: none;
