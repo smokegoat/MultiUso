@@ -114,6 +114,7 @@ body::-webkit-scrollbar-thumb{
     padding: 4px;
     border-radius: 20px;
     background-color:#6038AF ;
+    margin: 10px;
 }
 .invisible{
     display: none;
