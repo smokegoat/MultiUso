@@ -2,11 +2,12 @@ body{
     background-color: #000;
 }
 body::-webkit-scrollbar{
-    width: 10px;
+    width: 15px;
 }
 body::-webkit-scrollbar-thumb{
-    background-color: #3D1A59;
-    border-radius: 100px;
+    background-color: #340758;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .contenedor{
     width: auto;
@@ -32,7 +33,7 @@ body::-webkit-scrollbar-thumb{
 .contenido_centro_reloj{
     display: block;
     width: auto;
-    max-width: 70px;
+    max-width: 130px;
     padding: 10px;
     background-color:#8C52FF ;
     border: 6px solid #6038AF;
@@ -85,7 +86,7 @@ body::-webkit-scrollbar-thumb{
     padding-left: 15px;
     padding-bottom: 5px;
     border: none;
-    border-bottom: 5px solid rgb(229, 255, 0);
+    border-bottom: 5px solid rgb(0, 192, 10);
     margin: 5px;
     font-size: 20px;
     font-family: 'Kiwi Maru', serif;
@@ -95,13 +96,13 @@ body::-webkit-scrollbar-thumb{
     overflow: hidden;
     }
 .input2{
-    width:auto;
-    max-width: 300px;
+    min-width: 20px;
+    max-width: 100px;
     height: 20px;
     padding-left: 15px;
     padding-bottom: 5px;
     border: none;
-    border-bottom: 5px solid rgb(229, 255, 0);
+    border-bottom: 5px solid rgb(0, 192, 10);
     margin: 5px;
     font-size: 20px;
     font-family: 'Kiwi Maru', serif;
@@ -144,6 +145,8 @@ body::-webkit-scrollbar-thumb{
 }
 .conten{
     display: inline-block;
+    width: auto;
+    max-width: 280px;
     padding: 4px;
     border-radius: 20px;
     background-color:#6038AF ;
@@ -163,9 +166,9 @@ body::-webkit-scrollbar-thumb{
     width: 30px;
     height: 30px;
     border-radius: 100px;
-    border:2px solid #000;
-    background-color: transparent;
-    color: #000;
+    border: none;
+    background-color: #46BA22;
+    color: rgb(0, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
 }
@@ -184,13 +187,16 @@ h1{
 }
 .reloj{
     display: inline-block;
-    width: 60px;
+    width: 100px;
     background: transparent;
     border: none;
     outline: none;
     font-size: 20px;
-    font-family: 'Kiwi Maru', serif;
+    font-family: 'Dosis', sans-serif;
     display: inline-block;
-    font-size: 20px;
+    font-size: 40px;
+    color: rgb(255, 251, 0);
     font-weight: bolder;
+    text-shadow: 4px 3px 0px #1dfa00b0,-4px -3px 0px #d4037d52;
+    margin: 10px;
 }

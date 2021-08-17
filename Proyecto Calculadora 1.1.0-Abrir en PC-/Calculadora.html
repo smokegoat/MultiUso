@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/normalize.css">
     <title>Caluladora</title>
@@ -22,7 +25,7 @@
                 <h1 class="contenido_centro-titulo titulo">CALCULADORA BASICA</h1>
                 <form class="contenido_centro-form" id="contendo_centro-form" >
                     <div class="conten">
-                        <label for="input1" class="titulo">N°1:</label>
+                        <label for="input1" class="titulo">A:</label>
                         <input type="number" class="input" id="input1" value="0"  >
                     </div>
                     <select class="select" id="select">
@@ -32,7 +35,7 @@
                         <option value="DIVIDIR">DIVIDIR</option>
                     </select>
                     <div class="conten">
-                        <label for="input2" class="titulo labelBlock" > N°2:</label>
+                        <label for="input2" class="titulo labelBlock" >B:</label>
                         <input type="number" class="input" id="input2" value="0">
                     </div>
                     <button type="button" class="sacarResultado" id="sacarResultado" >Resultado</button>
@@ -43,9 +46,9 @@
                     <!-- instrucciones -->
             <div class="contenido_Instrucciones invisible " id="instrucciones">
                 <h1 class="titulo">Instrucciones: </h1>
-                <h3 class="titul2">Usando los espacios en blanco "N°1" y "N°2" podras usar SOLO numeros.</h3>
-                <h3 class="titul2">Si aprietas el Selector que esta pocisionado en medio de los "N°1" y "N°2" podras enontrarte con la opcion Suma, Resta, Multiplicacion y Division. </h3>
-                <h3 class="titul2">Si colocas un numero en los "N°1" y "N°2" y selecionas unas de las 4 funciones que ofrecemos podras sacar el Resultado usando el Boton Verde que dice Resultado</h3>
+                <h3 class="titul2">Usando los espacios en blanco "A" y "B" podras usar SOLO numeros.</h3>
+                <h3 class="titul2">Si aprietas el Selector que esta pocisionado en medio de los "A" y "B" podras enontrarte con la opcion Suma, Resta, Multiplicacion y Division. </h3>
+                <h3 class="titul2">Si colocas un numero en los "A" y "B" y selecionas unas de las 4 funciones que ofrecemos podras sacar el Resultado usando el Boton Verde que dice Resultado</h3>
             </div>
             <!---------Calculadora Avanzada---------->
             <div class="contenido_centro">
@@ -87,38 +90,23 @@
                     <h1 class="titulo">Instrucciones:</h1>
                     <img src="icon/descargar.png" class="img">
                 </div>
-                <div class="contenido_centro-form">
-                    <p class="titul2">Porcentaje</p>
-                <div class="conten ">
-                    <label for="cantidad" class="titulo">Cantidad:</label> 
-                    <input type="text" id="cantidad" class="input" onKeyPress="return onKeyPressBlockChars(event,this.value);" onKeyUp="calculaPorcentajes(this.value)">
-                </div><br>
-                <div class="conten block">
-                <p class="titul2">60%:</p>
-                <input type="text" class="input2" name="porcent60" id="porcent60"readonly>
-                </div>
-                <div class="conten block">
-                <p class="titul2">50%:</p>
-                <input type="text" class="input2" name="porcent50" id="porcent50"readonly>
-                </div>
-                <div class="conten block">
-                <p class="titul2">30%:</p>
-                <input type="text" class="input2" name="porcent30" id="porcent30"readonly>
-                </div>
-                <div class="conten block">
-                    <p class="titul2">25%</p>
-                <input type="text" class="input2" name="porcent25" id="porcent25"readonly>
-                </div>
-                <div class="conten block">
-                <p class="titul2">15%:</p>
-                <input type="text" class="input2" name="porcent15" id="porcent15"readonly>
-                </div>
-                <div class="conten block">
-                <p class="titul2">5%:</p>
-                <input type="text" class="input2" name="porcent5" id="porcent5" readonly></div>
-                </div>
-                <button class="botonMagico " id="" value="Instrucciones" >?</button>
 
+                <form class="contenido_centro-form">
+                    <p class="titul2">Porcentaje</p>
+                    <div class="conten">
+                        <label class="titulo" for="cantidad">Cantidad (100%)</label>
+                        <input type="number" class="input2"  id="cantidad" value="0">
+                    </div>
+                    <div class="conten">
+                        <label for="porcentaje" class="titulo">Porcentaje X</label>
+                        <input type="number" class="input2" id="porcentaje" value="0">
+                    </div>
+                    <button type="button" id="resultadoPorcent" class="sacarResultado">Resultado</button>
+                    <div id="resultadoPorcentaje"></div>
+                </form>
+                <button class="botonMagico " id="Ins.porcentaje">?</button>
+            </div>
+        </div>
 </body>
     <script src="js/index.js"></script>
 

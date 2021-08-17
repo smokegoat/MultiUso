@@ -58,30 +58,17 @@ function reloj() {
   let momentoActual = new Date();
   let hora = momentoActual.getHours();
   let minuto = momentoActual.getMinutes();
-  let horaImprimible = hora + ":" + minuto;
+  let horaImprimible = " "+ hora + ":" + minuto;
   document.getElementById("reloj").value = horaImprimible;
   setTimeout("reloj()", 1000);
 }
-  function onKeyPressBlockChars(e, numero) {
-    var key = window.event ? e.keyCode : e.which;
-    var keychar = String.fromCharCode(key);
-    reg = /\d|\./;
-    if (numero.indexOf(".") != -1 && keychar == ".") {
-      return false;
-    } else {
-      return reg.test(keychar);
-    }
-  }
-  function calculaPorcentajes(numero) {
-    
-    document.getElementById("porcent60").value = Math.floor(numero * 60) / 100;
-    document.getElementById("porcent50").value = Math.floor(numero * 50) / 100;
-    document.getElementById("porcent30").value = Math.floor(numero * 30) / 100;
-    document.getElementById("porcent25").value = Math.floor(numero * 25) / 100;
-    document.getElementById("porcent15").value = Math.floor(numero * 15) / 100;
-    document.getElementById("porcent5").value = Math.floor(numero * 5) / 100;
-
-  }
+function calcularPorcentaje() {
+  let cantidad = document.getElementById("cantidad").value;
+  let porcentajeX = document.getElementById("porcentaje").value;
+  let resultado = Math.floor(cantidad * porcentajeX)/100;
+  document.getElementById("resultadoPorcentaje").innerHTML=
+  `<p class="titulo resultitulo" id="resultado">${resultado}</p>`
+}
     document.getElementById("sacarResultado").addEventListener("click",sacarRespuesta);
     document.getElementById("sacarRaiz").addEventListener("click", raizCuadrada);
     document.getElementById("sacarPotencia").addEventListener("click",potencia);
@@ -92,3 +79,4 @@ function reloj() {
     document.getElementById("Ins.potencia").addEventListener("dblclick",magiaon3)
     document.getElementById("Ins.potencia").addEventListener("click",magiaoff3);
     reloj(); 
+    document.getElementById("resultadoPorcent").addEventListener("click",calcularPorcentaje);
