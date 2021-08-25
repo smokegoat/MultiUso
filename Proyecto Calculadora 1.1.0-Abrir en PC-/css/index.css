@@ -11,7 +11,7 @@ body::-webkit-scrollbar-thumb{
 }
 .contenedor{
     width: auto;
-    max-width: 700px;
+    max-width: 900px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -33,8 +33,8 @@ body::-webkit-scrollbar-thumb{
 .contenido_centro_reloj{
     display: block;
     width: auto;
-    max-width: 130px;
-    padding: 10px;
+    max-width: 90px;
+    padding: 2px;
     background-color:#8C52FF ;
     border: 6px solid #6038AF;
     box-shadow: 6px 8px 0px #3D1A59;
@@ -63,8 +63,23 @@ body::-webkit-scrollbar-thumb{
 .contenido_centro-form{
     display: block;
     margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 3px;
+    padding-left: 5px;
     border: 3px solid #3D1A59;
+    border-radius: 5px;
+}
+.contenido_dentro-form{
+    display: block;
+    width: auto;
+    max-width:700px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    margin-right: auto;
+    padding: 10px;
+    border: 5px solid #5c25c2;
     border-radius: 5px;
 }
 .contenido_Instrucciones{
@@ -96,6 +111,7 @@ body::-webkit-scrollbar-thumb{
     overflow: hidden;
     }
 .input2{
+    display: inline-block;
     min-width: 20px;
     max-width: 100px;
     height: 20px;
@@ -125,8 +141,9 @@ body::-webkit-scrollbar-thumb{
     outline: none;
 }
 .sacarResultado{
+    
     height: 30px;
-    margin-top: 10px;
+    margin: 10px;
     border: none;
     border-radius: 40px;
     font-family: 'Barlow Condensed', sans-serif;
@@ -135,7 +152,6 @@ body::-webkit-scrollbar-thumb{
 }
 .resultitulo{
     display: inline-block;
-    margin-top: 5px;
     width: auto;
     min-width: 100px;
     text-align: center;
@@ -143,10 +159,17 @@ body::-webkit-scrollbar-thumb{
     padding: 10px;
     background-color: rgba(107, 5, 107, 0.473);
 }
+.resultitulo-dentro{
+    display: inline-block;
+    width: auto;
+    min-width: 120px;
+    text-align: center;
+    padding: 10px;
+}
 .conten{
     display: inline-block;
     width: auto;
-    max-width: 280px;
+    max-width: 480px;
     padding: 4px;
     border-radius: 20px;
     background-color:#6038AF ;
@@ -187,16 +210,21 @@ h1{
 }
 .reloj{
     display: inline-block;
-    width: 100px;
+    width: 80px;
     background: transparent;
     border: none;
     outline: none;
-    font-size: 20px;
+    font-size: 10px;
     font-family: 'Dosis', sans-serif;
     display: inline-block;
-    font-size: 40px;
+    font-size: 30px;
     color: rgb(255, 251, 0);
     font-weight: bolder;
     text-shadow: 4px 3px 0px #1dfa00b0,-4px -3px 0px #d4037d52;
-    margin: 10px;
+    text-align: center;
+}
+.imgP{
+    border-radius: 20px;
+    margin: 5px;
+    border: 2px solid rgb(0, 0, 0);
 }
