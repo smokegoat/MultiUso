@@ -84,10 +84,15 @@ function areaCuadrado() {
   document.getElementById("respCrdo").innerHTML = `<p class="resultitulo titulo">${resultado}</p>`;
 }
 function areaTriangulo() {
-  let largoTriangulo = document.getElementById("");
-  let anchoTriangulo = document.getElementById("");
+  let largoTriangulo = document.getElementById("largoTri").value;
+  let anchoTriangulo = document.getElementById("anchoTri").value;
   let resultado = (largoTriangulo * anchoTriangulo) / 2;
-  document.getElementById("").innerHTML = `<p class="resultitulo titulo">${resultado}</p>`;
+  document.getElementById("resptri").innerHTML = `<p class="resultitulo titulo">${resultado}</p>`;
+}
+function areaCircunferencia() {
+  let radio = document.getElementById("radio").value;
+  let resultado = Math.pow(radio,2)/Math.PI
+  document.getElementById("respCir").innerHTML =`<p class="resultitulo titulo">${resultado}</p>`
 }
     document.getElementById("sacarResultado").addEventListener("click",sacarRespuesta);
     document.getElementById("sacarRaiz").addEventListener("click", raizCuadrada);
@@ -103,3 +108,5 @@ function areaTriangulo() {
     reloj(); 
     document.getElementById("resultadoPorcent").addEventListener("click",calcularPorcentaje);
     document.getElementById("areaCudro").addEventListener("click",areaCuadrado);
+    document.getElementById("areaTri").addEventListener("click",areaTriangulo);
+    document.getElementById("botonCircun").addEventListener("click",areaCircunferencia);
