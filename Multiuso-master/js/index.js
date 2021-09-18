@@ -1,38 +1,70 @@
 function sacarRespuesta(){
     let select = document.getElementById("select");
-    let input1 = document.getElementById("input1").value
-    let input2 = document.getElementById("input2").value
-    if (!isNaN(input1) && !isNaN(input2)) {
-      let operador = select.value;
+    let input1 = parseInt(document.getElementById("input1").value);
+    let input2 = parseInt(document.getElementById("input2").value);
+    let operador = select.value;
+
         if (operador == "RESTAR") {
-          let respuesta = parseInt(input1) - parseInt(input2);
-          document.getElementById("resultado").innerHTML = `<p class="titulo resultitulo" id="resultado">${respuesta}</p>`;}
+          let respuesta = input1 - input2;
+          if (isNaN(respuesta)) {
+          document.getElementById("resultado").innerHTML = 
+          `<p class="titulo resultitulo" id="resultado">Hubo un error</p>`;
+          }
+          else{
+          document.getElementById("resultado").innerHTML = 
+          `<p class="titulo resultitulo" id="resultado">${respuesta}</p>`;
+          }
+        }
         else if(operador == "SUMAR"){
-          let respuesta = parseInt(input1) + parseInt(input2);
-          document.getElementById("resultado").innerHTML = `<p class="titulo resultitulo" id="resultado">${respuesta}</p>`}
+          let respuesta = input1 + input2;
+          if (isNaN(respuesta)) {
+            document.getElementById("resultado").innerHTML = 
+          `<p class="titulo resultitulo" id="resultado">Hubo un error</p>`;
+          }
+          else{
+            document.getElementById("resultado").innerHTML = 
+          `<p class="titulo resultitulo" id="resultado">${respuesta}</p>`
+          }
+        }
+      
         else if(operador == "MULTIPLICAR"){
-          let respuesta = parseInt(input1) * parseInt(input2);
-          document.getElementById("resultado").innerHTML = `<p class="titulo resultitulo" id="resultado">${respuesta}</p>`;}
+          let respuesta = input1 * input2;
+          if (isNaN(respuesta)) {
+            document.getElementById("resultado").innerHTML = 
+          `<p class="titulo resultitulo" id="resultado">Hubo un error</p>`;
+          }else{
+            document.getElementById("resultado").innerHTML = 
+            `<p class="titulo resultitulo" id="resultado">${respuesta}</p>`;
+          }
+        }
+          
         else if(operador == "DIVIDIR"){
-          let respuesta = parseInt(input1) / parseInt(input2);
-          document.getElementById("resultado").innerHTML = `<p class="titulo resultitulo" id="resultado">${respuesta}</p>`;}
+          let respuesta = input1 / input2;
+          if (isNaN(respuesta)) {
+            document.getElementById("resultado").innerHTML = 
+          `<p class="titulo resultitulo" id="resultado">Hubo un error</p>`;
+          }else{
+            document.getElementById("resultado").innerHTML = 
+            `<p class="titulo resultitulo" id="resultado">${respuesta}</p>`;
+          }
+        }
+        
         else if(operador == "POTENCIA"){
-          let respuesta = Math.pow (parseInt(input1),parseInt(input2));
-          document.getElementById("resultado").innerHTML = `<p class="titulo resultitulo" id="resultado">${respuesta}</p>`;}
-    }else {
-      alert("Hubo un Error");
-     }
+          let respuesta = Math.pow (input1,input2);
+          if (isNaN(respuesta)) {
+            document.getElementById("resultado").innerHTML = 
+          `<p class="titulo resultitulo" id="resultado">Hubo un error</p>`;
+          }else{
+            document.getElementById("resultado").innerHTML = 
+            `<p class="titulo resultitulo" id="resultado">${respuesta}</p>`;}
+          }
+        
 }
 
 function raizCuadrada() {
     let subR = document.getElementById("subR").value;
-    if (!isNaN(subR)) {
       let respuesta = Math.sqrt(subR);
       document.getElementById("resultadoRaiz").innerHTML = `<p class="titulo resultitulo" id="resultado">${respuesta}</p>`;
-    
-    }else{
-      alert("Hubo un Error");
-    }
 }
 
 
@@ -71,7 +103,7 @@ function areaCuadrado() {
     let resultado = anchoCuadrado.value * largoCuadrado.value;
     document.getElementById("respCrdo").innerHTML = `<p class="resultitulo titulo">${resultado}</p>`;
   }else{
-    alert("Hubo un Error!");
+    document.getElementById("respCrdo").innerHTML = `<p class="resultitulo titulo">Hubo un Error</p>`;
   }
 }
 function areaTriangulo() {
