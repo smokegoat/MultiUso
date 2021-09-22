@@ -116,9 +116,10 @@
                     <!-- Area de figuras Geometricas -->
                     <form class="contenido_centro-form">
                         <p class="titul2">Area de figuras geometricas</p>
+                    
                         <!-- Cuadrado -->
                         <section class="contenido_dentro-form">
-                            <p class="titul2">El cuadrado</p>
+                            <p class="titul2">El cuadrado o Rectangulo</p>
                             <div class="conten">
                                 <label class="titulo" for="largoCudro">largo del cuadrado</label>
                                 <input type="number" id="largoCudro" class="input2">
@@ -129,7 +130,16 @@
                             </div>
                             <button type="button" class="sacarResultado" id="areaCudro" >Resultado</button>
                             <div id="respCrdo"></div>
+                            <button type="button" class="botonMagico " id="Ins.Area_cuadrado">?</button>
+                            <!-- Intrucciones del area cuadrado -->
+                            <div class="conten invisible" id="instrucciones5">
+                            <h1 class="titul2">Instrucciones: </h1>
+                            <h3 class="titulo">Esta seccion de la calculadora avanzada calcula el area del cuadrado </h3>
+                            <h3 class="titulo">Inserta el Largo y ancho del cuadrado en los espacios señalados</h3>
+                            <h3 class="titulo">Luego el Sistema los multiplicara</h3>
+                            </div>
                         </section>
+                         
                         <!-- Triangulo -->
                         <section class="contenido_dentro-form">
                             <p class="titul2">El triangulo</p>
@@ -143,6 +153,15 @@
                             </div>
                             <button type="button" class="sacarResultado" id="areaTri" >Resultado</button>
                             <div id="resptri"></div>
+                            <button type="button" class="botonMagico " id="Ins.Area_triangulo">?</button>
+                            <!-- Intrucciones del area triangulo -->
+                            <div class="conten invisible" id="instrucciones6">
+                            <h1 class="titul2">Instrucciones: </h1>
+                            <h3 class="titulo">Esta seccion de la calculadora avanzada calcula el area del Triangulo </h3>
+                            <h3 class="titulo">Inserta el largo y el ancho del triangulo </h3>
+                            <h3 class="titulo">Luego el sistema multiplicara el largo y el ancho, dividiendo el resultado en 2</h3>
+                            </div>
+                            
                         </section>
                         <!-- Circunferencia -->
                         <section class="contenido_dentro-form">
@@ -151,9 +170,18 @@
                                 <label class="titulo" for="radio">Radio</label>
                                 <input type="number" id="radio" class="input2" >
                             </div>
-                            <button type="button" class="sacarResultado" id="botonCircun" >Resultado</button><br>
+                            <div>
+                                <button type="button" class="sacarResultado" id="botonCircun" >Resultado</button><br>
+                            </div>
                             <div id="respCir"></div>
+                            <button type="button" class="botonMagico " id="Ins.Area_circunferencia">?</button>
+                            <!-- Intrucciones del area cuadrado -->
+                            <div class="conten invisible" id="instrucciones7">
+                            <h1 class="titulo">Instrucciones: </h1>
+                            <h3 class="titulo">Esta seccion de la calculadora avanzada calcula el area de la circunferencia</h3>
+                            </div>
                         </section>
+                        
                     </form>
                 </div>
         </div>

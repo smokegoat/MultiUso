@@ -1,6 +1,5 @@
 body{
     background-color: #000;
-    zoom: 130%;
 }
 body::-webkit-scrollbar{
     width: 15px;
@@ -16,6 +15,7 @@ body::-webkit-scrollbar-thumb{
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
+    height: auto;
 }
 .contenido_centro{
     width: auto;

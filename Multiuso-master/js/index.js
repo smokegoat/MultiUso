@@ -157,20 +157,50 @@ function magiaOff4() {
   document.getElementById("instrucciones4").classList.remove("visible");
   document.getElementById("instrucciones4").classList.add("invisible");
 }
+function magiaOn5() {
+  document.getElementById("instrucciones5").classList.remove("invisible");
+  document.getElementById("instrucciones5").classList.add("visible");
+}
+function magiaOff5() {
+  document.getElementById("instrucciones5").classList.remove("visible");
+  document.getElementById("instrucciones5").classList.add("invisible");
+}
+function magiaOn6() {
+  document.getElementById("instrucciones6").classList.remove("invisible");
+  document.getElementById("instrucciones6").classList.add("visible");
+}
+function magiaOff6() {
+  document.getElementById("instrucciones6").classList.remove("visible");
+  document.getElementById("instrucciones6").classList.add("invisible");
+}
+function magiaOn7() {
+  document.getElementById("instrucciones7").classList.remove("invisible");
+  document.getElementById("instrucciones7").classList.add("visible");
+}
+function magiaOff7() {
+  document.getElementById("instrucciones7").classList.remove("visible");
+  document.getElementById("instrucciones7").classList.add("invisible");
+}
 
     document.getElementById("sacarResultado").addEventListener("click",sacarRespuesta);
     document.getElementById("sacarRaiz").addEventListener("click", raizCuadrada);
     document.getElementById("sacarPotencia").addEventListener("click",potencia);
-    document.getElementById("botonInstruccionesBasicas").addEventListener("dblclick",magiaon);
-    document.getElementById("botonInstruccionesBasicas").addEventListener("click",magiaoff);
-    document.getElementById("InstruccionesRaiz").addEventListener("dblclick",magiaon2);
-    document.getElementById("InstruccionesRaiz").addEventListener("click",magiaoff2);
-    document.getElementById("Ins.potencia").addEventListener("dblclick",magiaon3)
-    document.getElementById("Ins.potencia").addEventListener("click",magiaoff3);
+    document.getElementById("botonInstruccionesBasicas").addEventListener("click",magiaon);
+    document.getElementById("botonInstruccionesBasicas").addEventListener("dblclick",magiaoff);
+    document.getElementById("InstruccionesRaiz").addEventListener("click",magiaon2);
+    document.getElementById("InstruccionesRaiz").addEventListener("dblclick",magiaoff2);
+    document.getElementById("Ins.potencia").addEventListener("click",magiaon3)
+    document.getElementById("Ins.potencia").addEventListener("dblclick",magiaoff3);
     document.getElementById("Ins.porcentaje").addEventListener("click",magiaOn4);
     document.getElementById("Ins.porcentaje").addEventListener("dblclick",magiaOff4);
     document.getElementById("resultadoPorcent").addEventListener("click",calcularPorcentaje);
     document.getElementById("areaCudro").addEventListener("click",areaCuadrado);
     document.getElementById("areaTri").addEventListener("click",areaTriangulo);
     document.getElementById("botonCircun").addEventListener("click",areaCircunferencia);
+    document.getElementById("Ins.Area_cuadrado").addEventListener("click",magiaOn5);
+    document.getElementById("Ins.Area_cuadrado").addEventListener("dblclick",magiaOff5);
+    document.getElementById("Ins.Area_triangulo").addEventListener("click",magiaOn6);
+    document.getElementById("Ins.Area_triangulo").addEventListener("dblclick",magiaOff6);
+    document.getElementById("Ins.Area_circunferencia").addEventListener("click",magiaOn7);
+    document.getElementById("Ins.Area_circunferencia").addEventListener("dblclick",magiaOff7);
     reloj();
