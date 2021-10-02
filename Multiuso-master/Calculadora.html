@@ -23,10 +23,10 @@
                 </form>
                 <!-- Calculadora Basica -->
                 <div class="contenido_centro">
-                    <h1 class="contenido_centro-titulo titulo">CALCULADORA BASICA</h1>
+                    <h1 class="contenido_centro-titulo tituloGrande">CALCULADORA BASICA</h1>
                     <form class="contenido_centro-form" id="contendo_centro-form" >
                         <div class="conten">
-                            <label for="input1" class="titulo">A:</label>
+                            <label for="input1" class="titulo">A :</label>
                             <input type="number" class="input" id="input1" >
                         </div>
                         <select class="select" id="select">
@@ -36,7 +36,7 @@
                             <option value="DIVIDIR">DIVIDIR</option>
                         </select>
                         <div class="conten">
-                            <label for="input2" class="titulo labelBlock" >B:</label>
+                            <label for="input2" class="titulo labelBlock" >B :</label>
                             <input type="number" class="input" id="input2">
                         </div>
                         <button type="button" class="sacarResultado" id="sacarResultado" >Resultado</button>
@@ -53,13 +53,13 @@
                 </div>
                 <!---------Calculadora Avanzada---------->
                 <div class="contenido_centro">
-                    <h1 class="contenido_centro-titulo titulo">CALCULADORA AVANZADA</h1>
+                    <h1 class="contenido_centro-titulo tituloGrande">CALCULADORA AVANZADA</h1>
                     <!-- raiz -->
                     <form class="contenido_centro-form">
                         <p class="titul2">Raiz Cuadrada</p>
-                        <div class=" titul3">√</div>
-                        <div class="conten">
-                            <label for="subR" class="titulo">Subradical:</label>
+                        <div class="conten2">
+                            <div class=" titul3">√</div>
+                            <label for="subR" class="titulo">Subradical :</label>
                             <input type="number" class="input" id="subR" >
                         </div>
                         <button type="button" class="sacarResultado" id="sacarRaiz" >Resultado</button>
@@ -67,7 +67,7 @@
                     </form>
                     <!-- Instruciones Raiz -->
                     <button class="botonMagico " id="InstruccionesRaiz" value="Instrucciones" >?</button>
-                    <div class="conten invisible" id="instrucciones2"> 
+                    <div class="Instrucciones invisible" id="instrucciones2"> 
                         <h1 class="titulo">Instrucciones: </h1>
                         <h3 class="titul2">Esta vez es solo un Espacio en blanco solamente pones un numero por ejemplo el 4 y le das al boton y listo.</h3>
                         <h3 class="titul2">Solo se puede usar la raiz cuadrada con indice 2</h3>
@@ -75,19 +75,19 @@
                     <!-- potencias -->
                     <form class="contenido_centro-form">
                         <p class="titul2">Potencias</p>
-                        <div class="conten">
-                            <label for="in.potencia" class="titulo">Exponente:</label>
+                        <div class="conten2">
+                            <label for="in.potencia" class="titulo">Exponente :</label>
                             <input type="number" class="input" id="in.potencia" >
                         </div>
-                        <div class="conten">
-                            <label for="in.base" class="titulo">Base:</label>
+                        <div class="conten2">
+                            <label for="in.base" class="titulo">Base :</label>
                             <input type="number" class="input" id="in.base" >
                         </div>
                         <button type="button" class="sacarResultado" id="sacarPotencia" >Resultado</button>
                         <div id="resultdopotencia"></div>
                     </form>
                     <button class="botonMagico " id="Ins.potencia" value="Instrucciones" >?</button>
-                    <div class="conten invisible" id="instrucciones3">
+                    <div class="Instrucciones invisible" id="instrucciones3">
                         <!-- Instrucciones potencias -->
                         <h1 class="titulo">Instrucciones:</h1>
                         <img src="icon/descargar.png" class="img">
@@ -95,23 +95,23 @@
                     <!-- Porcentajes -->
                     <form class="contenido_centro-form">
                         <p class="titul2">Porcentaje</p>
-                        <div class="conten">
-                            <label class="titulo" for="cantidad">Cantidad Total</label>
+                        <div class="conten2">
+                            <label class="titulo" for="cantidad">Cantidad Total :</label>
                             <input type="number" class="input2"  id="cantidad">
                         </div>
-                        <div class="conten">
-                            <label for="porcentaje" class="titulo">Porcentaje X</label>
+                        <div class="conten2">
+                            <label for="porcentaje" class="titulo">Porcentaje :</label>
                             <input type="number" class="input2" id="porcentaje">
                         </div>
                         <button type="button" id="resultadoPorcent" class="sacarResultado">Resultado</button>
                         <div id="resultadoPorcentaje"></div>
                     </form>
                     <button class="botonMagico " id="Ins.porcentaje">?</button>
-                    <div class="conten invisible" id="instrucciones4">
+                    <div class="Instrucciones invisible" id="instrucciones4">
                         <!-- Instrucciones Porcentajes -->
                         <h1 class="titulo">Intrucciones:</h1>
                         <p class="titulo">Como funciona la formula para sacar el porcentaje de un numero:</p>
-                        <img src="icon/formulaPorcentaje.png" width="230px" class="imgP" alt="">
+                        <img src="icon/formulaPorcentaje.png" width="430px" class="imgP" alt="">
                     </div>
                     <!-- Area de figuras Geometricas -->
                     <form class="contenido_centro-form">
@@ -120,19 +120,19 @@
                         <!-- Cuadrado -->
                         <section class="contenido_dentro-form">
                             <p class="titul2">El cuadrado o Rectangulo</p>
-                            <div class="conten">
-                                <label class="titulo" for="largoCudro">largo del cuadrado</label>
+                            <div class="conten2">
+                                <label class="titulo" for="largoCudro">largo del cuadrado :</label>
                                 <input type="number" id="largoCudro" class="input2">
                             </div>
-                            <div class="conten">
-                                <label for="anchoCudro" class="titulo">Ancho del cuadrado</label>
+                            <div class="conten2">
+                                <label for="anchoCudro" class="titulo">Ancho del cuadrado :</label>
                                 <input type="number" id="anchoCudro" class="input2" >
                             </div>
                             <button type="button" class="sacarResultado" id="areaCudro" >Resultado</button>
                             <div id="respCrdo"></div>
                             <button type="button" class="botonMagico " id="Ins.Area_cuadrado">?</button>
                             <!-- Intrucciones del area cuadrado -->
-                            <div class="conten invisible" id="instrucciones5">
+                            <div class="Instrucciones invisible" id="instrucciones5">
                             <h1 class="titul2">Instrucciones: </h1>
                             <h3 class="titulo">Esta seccion de la calculadora avanzada calcula el area del cuadrado </h3>
                             <h3 class="titulo">Inserta el Largo y ancho del cuadrado en los espacios señalados</h3>
@@ -143,19 +143,19 @@
                         <!-- Triangulo -->
                         <section class="contenido_dentro-form">
                             <p class="titul2">El triangulo</p>
-                            <div class="conten">
-                                <label class="titulo" for="largoTri">largo del triangulo</label>
+                            <div class="conten2">
+                                <label class="titulo" for="largoTri">largo del triangulo :</label>
                                 <input type="number" id="largoTri" class="input2" >
                             </div>
-                            <div class="conten">
-                                <label for="anchoTri" class="titulo">Ancho del triangulo</label>
+                            <div class="conten2">
+                                <label for="anchoTri" class="titulo">Ancho del triangulo :</label>
                                 <input type="number" id="anchoTri" class="input2" >
                             </div>
                             <button type="button" class="sacarResultado" id="areaTri" >Resultado</button>
                             <div id="resptri"></div>
                             <button type="button" class="botonMagico " id="Ins.Area_triangulo">?</button>
                             <!-- Intrucciones del area triangulo -->
-                            <div class="conten invisible" id="instrucciones6">
+                            <div class="Instrucciones invisible" id="instrucciones6">
                             <h1 class="titul2">Instrucciones: </h1>
                             <h3 class="titulo">Esta seccion de la calculadora avanzada calcula el area del Triangulo </h3>
                             <h3 class="titulo">Inserta el largo y el ancho del triangulo </h3>
@@ -166,8 +166,8 @@
                         <!-- Circunferencia -->
                         <section class="contenido_dentro-form">
                             <p class="titul2">La circunferencia</p>
-                            <div class="conten">
-                                <label class="titulo" for="radio">Radio</label>
+                            <div class="conten2">
+                                <label class="titulo" for="radio">Radio :</label>
                                 <input type="number" id="radio" class="input2" >
                             </div>
                             <div>
@@ -176,12 +176,22 @@
                             <div id="respCir"></div>
                             <button type="button" class="botonMagico " id="Ins.Area_circunferencia">?</button>
                             <!-- Intrucciones del area cuadrado -->
-                            <div class="conten invisible" id="instrucciones7">
+                            <div class="Instrucciones invisible" id="instrucciones7">
                             <h1 class="titulo">Instrucciones: </h1>
                             <h3 class="titulo">Esta seccion de la calculadora avanzada calcula el area de la circunferencia</h3>
                             </div>
                         </section>
-                        
+                    </form>
+                    <form class="contenido_centro-form">
+                        <h1 class="titul2">Ley de ohms</h1>
+                        <div class="conten2">
+                            <label class="titulo" for="">Voltaje :</label>
+                            <input type="number" class="input2" id="">
+                        </div>
+                        <div class="conten2">
+                            <label class="titulo" for="">Intensidad :</label>
+                            <input type="number" class="input2">
+                        </div>
                     </form>
                 </div>
         </div>

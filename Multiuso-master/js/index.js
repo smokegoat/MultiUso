@@ -39,7 +39,7 @@ function sacarRespuesta(){
         }
           
         else if(operador == "DIVIDIR"){
-          let respuesta = input1 / input2;
+          let respuesta = Math.round(input1 / input2);
           if (isNaN(respuesta)) {
             document.getElementById("resultado").innerHTML = 
           `<p class="titulo resultitulo" id="resultado">Hubo un error</p>`;
@@ -63,7 +63,7 @@ function sacarRespuesta(){
 
 function raizCuadrada() {
     let subR = document.getElementById("subR").value;
-      let respuesta = Math.sqrt(subR);
+      let respuesta = Math.round(Math.sqrt(subR));
       document.getElementById("resultadoRaiz").innerHTML = `<p class="titulo resultitulo" id="resultado">${respuesta}</p>`;
 }
 
@@ -97,10 +97,10 @@ function calcularPorcentaje() {
   }
 }
 function areaCuadrado() {
-  let largoCuadrado = document.getElementById("largoCudro");
-  let anchoCuadrado = document.getElementById("anchoCudro");
-  if (!isNaN(largoCuadrado) && isNaN(anchoCuadrado)) {
-    let resultado = anchoCuadrado.value * largoCuadrado.value;
+  let largoCuadrado = document.getElementById("largoCudro").value;
+  let anchoCuadrado = document.getElementById("anchoCudro").value;
+  if (!isNaN(largoCuadrado) && !isNaN(anchoCuadrado)) {
+    let resultado = anchoCuadrado * largoCuadrado;
     document.getElementById("respCrdo").innerHTML = `<p class="resultitulo titulo">${resultado}</p>`;
   }else{
     document.getElementById("respCrdo").innerHTML = `<p class="resultitulo titulo">Hubo un Error</p>`;
@@ -119,7 +119,7 @@ function areaTriangulo() {
 function areaCircunferencia() {
   let radio = document.getElementById("radio").value;
   if (!isNaN(radio)) {
-    let resultado = Math.pow(radio,2)/Math.PI
+    let resultado = Math.round(Math.pow(radio,2)/Math.PI);
     document.getElementById("respCir").innerHTML =`<p class="resultitulo titulo">${resultado}</p>`
   }else {
     alert("Hubo un Error!");

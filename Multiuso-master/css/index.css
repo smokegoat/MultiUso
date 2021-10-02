@@ -1,17 +1,18 @@
 body{
-    background-color: #000;
+    background-color: rgba(71, 2, 117, 0.993);
+    zoom: 98% ;
 }
 body::-webkit-scrollbar{
     width: 15px;
 }
 body::-webkit-scrollbar-thumb{
     background-color: #340758;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
 }
 .contenedor{
     width: auto;
-    max-width: 900px;
+    max-width: 1300px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -34,8 +35,7 @@ body::-webkit-scrollbar-thumb{
 .contenido_centro_reloj{
     display: block;
     width: auto;
-    max-width: 90px;
-    padding: 2px;
+    max-width: 138px;
     background-color:#8C52FF ;
     border: 6px solid #6038AF;
     box-shadow: 6px 8px 0px #3D1A59;
@@ -46,13 +46,19 @@ body::-webkit-scrollbar-thumb{
 .titulo{
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 25px;
+}
+.tituloGrande{
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-size: 35px;
 }
 .titul2{
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 2px;
-    font-size: 22px;
+    font-size: 29px;
 }
+
 .titul3{
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 2px;
@@ -67,29 +73,35 @@ body::-webkit-scrollbar-thumb{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    padding: 3px;
-    padding-left: 5px;
-    border: 3px solid #3D1A59;
+    padding: 10px;
+    border: 4px solid #490d7a;
     border-radius: 5px;
 }
 .contenido_dentro-form{
     display: block;
-    width: auto;
-    max-width:700px;
     margin-top: 5px;
     margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: auto;
     padding: 10px;
-    border: 5px solid #5c25c2;
+    border: 5px solid #5708eb;
     border-radius: 5px;
 }
 .contenido_Instrucciones{
-    width: 700px;
+    width: 1000px;
     padding: 10px;
-    background-color:#8C52FF ;
-    border: 6px solid #6038AF;
-    box-shadow: 6px 8px 0px #3D1A59;
+    background-color:#fffb009d ;
+    border: 6px solid #e5ff00;
+    box-shadow: 6px 8px 0px #93960f;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    border-radius: 5px;
+}
+.Instrucciones{
+    width: 1000px;
+    padding: 10px;
+    background-color:#fffb0081 ;
+    border: 6px solid #e5ff00;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -98,7 +110,7 @@ body::-webkit-scrollbar-thumb{
 }
 .input{
     width:auto;
-    max-width: 100px;
+    max-width: 200px;
     height: 20px;
     padding-left: 15px;
     padding-bottom: 5px;
@@ -115,7 +127,7 @@ body::-webkit-scrollbar-thumb{
 .input2{
     display: inline-block;
     min-width: 20px;
-    max-width: 100px;
+    max-width: 200px;
     height: 20px;
     padding-left: 15px;
     padding-bottom: 5px;
@@ -131,13 +143,13 @@ body::-webkit-scrollbar-thumb{
 }
 .select{
     width: auto;
-    max-width: 110px;
-    height: 30px;
+    max-width: 210px;
+    height: 40px;
     border-radius: 10px;
     border: none;
     box-shadow: 2px 4px 4px  rgba(99, 98, 98, 0.582);
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 2px;
     background-color: rgb(140, 195, 240);
     outline: none;
@@ -169,13 +181,24 @@ body::-webkit-scrollbar-thumb{
     padding: 10px;
 }
 .conten{
-    display: inline-block;
+    display: block;
     width: auto;
-    max-width: 480px;
+    max-width: 290px;
     padding: 4px;
     border-radius: 20px;
     background-color:#6038AF ;
-    margin: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.conten2{
+    display: block;
+    width: auto;
+    max-width: 500px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color:#6038AF ;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .block{
     display: block;
@@ -212,18 +235,16 @@ h1{
 }
 .reloj{
     display: inline-block;
-    width: 80px;
+    width: 120px;
     background: transparent;
     border: none;
     outline: none;
-    font-size: 10px;
     font-family: 'Dosis', sans-serif;
     display: inline-block;
-    font-size: 30px;
-    color: rgb(255, 251, 0);
+    font-size: 60px;
+    color: rgb(255, 255, 255);
     font-weight: bolder;
-    text-shadow: 4px 3px 0px #1dfa00b0,-4px -3px 0px #d4037d52;
-    text-align: center;
+    text-shadow: 4px 3px 0px #0019fae5,-4px -3px 0px #d4037ddc;
 }
 .imgP{
     border-radius: 20px;
