@@ -35,7 +35,7 @@ body::-webkit-scrollbar-thumb{
 .contenido_centro_reloj{
     display: block;
     width: auto;
-    max-width: 138px;
+    max-width: 150px;
     background-color:#8C52FF ;
     border: 6px solid #6038AF;
     box-shadow: 6px 8px 0px #3D1A59;
@@ -235,7 +235,7 @@ h1{
 }
 .reloj{
     display: inline-block;
-    width: 120px;
+    width: 220px;
     background: transparent;
     border: none;
     outline: none;
