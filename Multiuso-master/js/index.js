@@ -125,6 +125,41 @@ function areaCircunferencia() {
     alert("Hubo un Error!");
   }
 }
+function calcOHMS() {
+  var voltaje = document.getElementById("voltaje").value;
+  var intensidad = document.getElementById("intensidad").value;
+  var resistencia = document.getElementById("resistencia").value;
+
+   if(!isNaN(voltaje) || !isNaN(intensidad) || !isNaN(resistencia)){
+    if (voltaje == "" || voltaje == 0) {
+        let resultado = intensidad * resistencia;
+        if (resultado == Infinity) {
+          alert("faltan datos")
+        } else {
+          alert(resultado)
+        }
+      }
+      else if(intensidad == "" || intensidad == 0){
+        let resultado = voltaje/resistencia;
+        if (resultado == Infinity) {
+          alert("faltan datos")
+        } else {
+          alert(resultado)
+        }
+      }
+      else if(resistencia== ""|| resistencia == 0)
+      {
+        let resultado = voltaje/intensidad;
+        if (resultado == Infinity) {
+          alert("faltan datos")
+        } else {
+          alert(resultado)
+        }
+      }
+  }else {
+    alert("Error %%%")
+  }
+}
 function magiaon() {
   document.getElementById("instrucciones").classList.remove("invisible");
   document.getElementById("instrucciones").classList.add("visible");
@@ -203,4 +238,5 @@ function magiaOff7() {
     document.getElementById("Ins.Area_triangulo").addEventListener("dblclick",magiaOff6);
     document.getElementById("Ins.Area_circunferencia").addEventListener("click",magiaOn7);
     document.getElementById("Ins.Area_circunferencia").addEventListener("dblclick",magiaOff7);
+    document.getElementById("resul_ohm").addEventListener("click",calcOHMS);
     reloj();
