@@ -134,30 +134,30 @@ function calcOHMS() {
     if (voltaje == "" || voltaje == 0) {
         let resultado = intensidad * resistencia;
         if (resultado == Infinity) {
-          alert("faltan datos")
+          document.getElementById("resp.box_ohm.ley").innerHTML = `<p class="resultitulo titulo">Faltan Datos <3 </p>`
         } else {
-          alert(resultado)
+          document.getElementById("resp.box_ohm.ley").innerHTML = `<p class="resultitulo titulo">Voltaje: ${resultado}</p>`
         }
       }
       else if(intensidad == "" || intensidad == 0){
         let resultado = voltaje/resistencia;
         if (resultado == Infinity) {
-          alert("faltan datos")
+          document.getElementById("resp.box_ohm.ley").innerHTML = `<p class="resultitulo titulo">Faltan Datos <3 </p>`
         } else {
-          alert(resultado)
+          document.getElementById("resp.box_ohm.ley").innerHTML = `<p class="resultitulo titulo">Intensidad: ${resultado}</p>`
         }
       }
       else if(resistencia== ""|| resistencia == 0)
       {
         let resultado = voltaje/intensidad;
         if (resultado == Infinity) {
-          alert("faltan datos")
+          document.getElementById("resp.box_ohm.ley").innerHTML = `<p class="resultitulo titulo">Faltan Datos <3 </p>`
         } else {
-          alert(resultado)
+          document.getElementById("resp.box_ohm.ley").innerHTML = `<p class="resultitulo titulo">Resistencia: ${resultado}</p>`
         }
       }
   }else {
-    alert("Error %%%")
+    document.getElementById("resp.box_ohm.ley").innerHTML = `<p class="resultitulo titulo"> Error!!###!! </p>`
   }
 }
 function magiaon() {
